@@ -143,7 +143,7 @@ li{
  /* Store Description */
 
 .description {
-  width: 50%;
+  width: 800px;
   margin: auto;
 }
 
@@ -195,7 +195,7 @@ li{
   background-color: #fff;
   width: 250px;
   height: 175px;
-  margin: 20px 30px;
+  margin: 20px 20px;
   padding: 30px;
   vertical-align: middle;
 }
@@ -203,6 +203,7 @@ li{
 .section h1 {
   padding: 20px 0;
 }
+
 
 .contact-box h2 {
   padding: 20px 0;
