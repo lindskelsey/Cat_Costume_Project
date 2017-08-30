@@ -180,8 +180,48 @@ li{
 .section img {
   width: 190px;
   border-radius: 50%;
-  margin: 80px 27.5px 0;
+  margin: 80px 27.5px 20px 0;
 }
+
+/* Contact */
+
+.grey {
+  background-color: #eee;
+}
+
+.contact-box {
+  text-align: left;
+  display: inline-block;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  margin: 20px 30px;
+  padding: 30px;
+  vertical-align: top;
+}
+
+.section h1 {
+  padding: 20px 0;
+}
+
+.contact-box h2 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #00897f;
+}
+footer h1 {
+  text-align: center;
+  font-size: 1.25em;
+  color: #fff;
+  margin: 0;
+  padding: 52.5px 0;
+}
+
+
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
