@@ -301,3 +301,43 @@ footer h1 {
   }
 
 }
+
+@media screen and (max-width: 375px) {
+
+  h1, nav h1, h2, footer h1 {
+    font-size: 1em;
+  }
+
+  h3, p, a {
+    font-size: .3em;
+  }
+
+  .profile {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile p {
+    padding: 5% 12%;
+    margin: 0;
+  }
+
+  .contact-box {
+    width: 40%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .contact-box h2:first-child {
+    padding: 15% 0 0 0;
+  }
+
+  a {
+    position: relative;
+    top: -20px;
+    left: 48px;
+    line-height: .3em;
+  }
+
+}
