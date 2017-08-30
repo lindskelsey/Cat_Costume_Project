@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  font-family: "PT Serif", serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -50,12 +51,18 @@ table {
 /* Font Styles */
 
 body {
-  font-family: "PT Sans Narrow Bold", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   color: #323232;
 }
 
+h2, h1, nav h1, footer h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+}
+
 h3, p {
-  font-family: "PT Serif Regular", sans-serif;
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
 }
 
 h3, a {
@@ -82,7 +89,7 @@ p {
 }
 
 a {
-  font-family: "PT Serif Bold", serif;
+  font-family: "PT Serif", serif;
   color: #f26522;
 }
 
@@ -91,7 +98,7 @@ nav h1 {
 }
 
 nav p {
-  font-family: "PT Sans Regular", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: .9em;
 }
 
@@ -147,6 +154,7 @@ li{
   width: 60%;
   margin: 0 auto;
   max-width: 1200px;
+  font-weight: 700;
 }
 
 .description h1 {
@@ -210,6 +218,13 @@ li{
 .contact-box h2 {
   padding: 2% 0;
   text-align: center;
+}
+
+a {
+  position: relative;
+  top: -28px;
+  left: 80px;
+  line-height: 1.5em;
 }
 
 /* Footer */
