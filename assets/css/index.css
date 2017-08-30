@@ -107,7 +107,7 @@ h1, h2, a {
 /* Nav Bar */
 
 nav {
-  height: 80px;
+  height: 10%;
   width: 100%;
   display: inline-block;
 }
@@ -118,7 +118,7 @@ nav {
 
 li{
   display: inline-block;
-  padding: 20px;
+  padding: 2%;
   text-align:center;
   vertical-align: middle;
  }
@@ -127,8 +127,8 @@ li{
 
  .splash img {
    display: block;
-   padding:0;
-   height:auto;
+   padding: 0;
+   height: auto;
    width: 100%;
  }
 
@@ -167,7 +167,7 @@ li{
   background-color: #eee;
   width: 250px;
   height: 250px;
-  margin: 2% 5%;
+  margin: 0 2%;
   padding: 3%;
   vertical-align: top;
 }
@@ -225,25 +225,42 @@ footer h1 {
   padding: 5% 0;
 }
 
+/* Max-width 790px */
 
+@media screen and (max-width: 790px) {
 
-/* On devices less than 660px */
-@media and screen (max-width: 1000px) {
+  .profile {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+}
+
+/* Max-width 680px */
+
+@media screen and (max-width: 680px) {
 
   nav p {
-    display: none;
+    display: none
+  }
+
+  nav, li {
+    display: block;
   }
 
   nav h1 {
     text-align: center;
+    vertical-align: middle;
   }
 
-  .description, .profile {
-    display: block;
-    width: inherit;
-    width: 100%
+  #cat-one, #cat-two {
+    display: none;
   }
 
-  .section {
-    width: 100%;
+  #cat-three {
+    width: 50%;
   }
+
+}
