@@ -228,17 +228,22 @@ footer h1 {
 
 
 /* On devices less than 660px */
-@media and screen (max-width: 800px) {
+@media and screen (max-width: 1000px) {
 
   nav p {
     display: none;
   }
 
-#cat-one, #cat-two {
-  display: none;
-}
+  nav h1 {
+    text-align: center;
+  }
 
+  .description, .profile {
+    display: block;
+    width: inherit;
+    width: 100%
+  }
 
-
-
-}
+  .section {
+    width: 100%;
+  }
