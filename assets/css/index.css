@@ -138,6 +138,7 @@ li{
    width: 80%;
    margin: 0 auto;
    text-align: center;
+   max-width: 1200px;
  }
 
  /* Store Description */
@@ -145,6 +146,7 @@ li{
 .description {
   width: 60%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .description h1 {
