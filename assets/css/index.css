@@ -227,19 +227,18 @@ footer h1 {
 
 
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
+/* On devices less than 660px */
+@media and screen (max-width: 800px) {
+
+  nav p {
+    display: none;
+  }
+
+#cat-one, #cat-two {
+  display: none;
 }
 
-/* On devices wider than 940px */
-@media(min-width: 940px) {
-}
 
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
-}
 
-/* On devices wider than 940px */
-@media(min-width: 940px) {
 }
