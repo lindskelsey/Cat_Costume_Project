@@ -1,67 +1,24 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*----------CSS Reset----------*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, h1, h2, h3, h4, h5, h6, p,
+a, img, ul, li, footer, nav{
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
   font-family: "PT Serif", serif;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	color: #323232;
 }
 
-/* Font Styles */
+/*----------Font Styles----------*/
 
-body {
-  font-family: "PT Sans Narrow", sans-serif;
-  color: #323232;
-}
-
-h2, h1, nav h1, footer h1 {
+h1, h2, nav h1, footer h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
 }
 
-h3, p {
-  font-family: "PT Serif", sans-serif;
+h1, h2, h3, p, a {
   font-weight: 700;
 }
 
@@ -89,7 +46,6 @@ p {
 }
 
 a {
-  font-family: "PT Serif", serif;
   color: #f26522;
 }
 
@@ -107,16 +63,31 @@ footer h1 {
 	color: #fff;
 }
 
-h1, h2, a {
-  font-weight: 700;
+/*----------General Styles----------*/
+
+nav, li, .profile, .contact-box {
+	display: inline-block;
 }
 
-/* Nav Bar */
+nav, .splash img {
+	width: 100%;
+}
+
+li, .section, .description h1, .profile
+h2, .contact-box h2, footer h1 {
+	text-align: center;
+}
+
+.section {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/*----------Nav Bar----------*/
 
 nav {
   height: 10%;
-  width: 100%;
-  display: inline-block;
 }
 
 .nav-right {
@@ -124,31 +95,19 @@ nav {
 }
 
 li{
-  display: inline-block;
   padding: 2%;
-  text-align:center;
   vertical-align: middle;
  }
 
- /* Splash Image */
+ /*----------Splash Image----------*/
 
  .splash img {
    display: block;
    padding: 0;
    height: auto;
-   width: 100%;
  }
 
- /* Section Div */
-
- .section {
-   width: 80%;
-   margin: 0 auto;
-   text-align: center;
-   max-width: 1200px;
- }
-
- /* Store Description */
+ /*----------Store Description----------*/
 
 .description {
   width: 60%;
@@ -158,7 +117,6 @@ li{
 }
 
 .description h1 {
-  text-align: center;
   padding: 10% 0 5% 0;
 }
 
@@ -167,11 +125,10 @@ li{
   padding: 0 0 10% 0;
 }
 
-/* Cat Profiles */
+/*----------Cat Profiles----------*/
 
 .profile {
   text-align: left;
-  display: inline-block;
   background-color: #eee;
   width: 250px;
   height: 250px;
@@ -182,10 +139,9 @@ li{
 
 .profile h2 {
   padding: 3% 0;
-  text-align: center;
 }
 
-/* Cat Image Row */
+/*----------Cat Image Row----------*/
 
 .section img {
   width: 25%;
@@ -193,7 +149,7 @@ li{
   margin: 5% 2% 3% 0;
 }
 
-/* Contact */
+/*----------Contact----------*/
 
 .grey {
   background-color: #eee;
@@ -201,7 +157,6 @@ li{
 
 .contact-box {
   text-align: left;
-  display: inline-block;
   background-color: #fff;
   width: 250px;
   height: 130px;
@@ -213,11 +168,8 @@ li{
 .section h1 {
   padding: 3% 0;
 }
-
-
 .contact-box h2 {
   padding: 2% 0;
-  text-align: center;
 }
 
 a {
@@ -227,20 +179,19 @@ a {
   line-height: 1.5em;
 }
 
-/* Footer */
+/*----------Footer----------*/
 
 footer {
   background-color: #00897f;
 }
 footer h1 {
-  text-align: center;
   font-size: 1.25em;
   color: #fff;
   margin: 0;
   padding: 5% 0;
 }
 
-/* Max-width 790px */
+/*----------Max-width 790px----------*/
 
 @media screen and (max-width: 790px) {
 
@@ -268,14 +219,10 @@ footer h1 {
     text-align: center;
     padding: 3% 0 2% 0;
     background-color: #eee;
-
   }
-
-
-
 }
 
-/* Max-width 680px */
+/*----------Max-width 680px----------*/
 
 @media screen and (max-width: 680px) {
 
@@ -299,8 +246,9 @@ footer h1 {
   #cat-three {
     width: 50%;
   }
-
 }
+
+/*----------Max Width 375px----------*/
 
 @media screen and (max-width: 375px) {
 
